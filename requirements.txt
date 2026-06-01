@@ -1,0 +1,9 @@
+torch
+torchvision
+scikit-image
+pickle
+pillow
+matplotlib
+torchsummary
+dominate
+piqa
