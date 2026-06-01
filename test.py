@@ -13,7 +13,6 @@ from PIL import Image
 from pathlib import Path
 from matplotlib import pyplot as plt
 from supporting.model import VxmDense
-from supporting.warping import WarpImage
 from supporting.options import TestOptions
 from supporting.util import tensor2im,save_image
 from supporting.dataset import CustomImageDataset,CustomImageDVFDataset
