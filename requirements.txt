@@ -4,6 +4,8 @@ scikit-image
 pickle
 pillow
 matplotlib
+opencv-python
 torchsummary
 dominate
+SimpleITK
 piqa
