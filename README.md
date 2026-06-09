@@ -41,6 +41,14 @@ and tested usign the command line command:
 python test.py --name RegTest --movingDir <path to test moving images> --fixedDir <path to test fixed images> --maskDir <path to test moving image masks> --epoch <EpochNumber>
 ```
 
+You can train using cpu only by specifying ```--gpu_ids -1``` as an option for the testing and training code. 
+
+Running the train.py code will create a directory in <checkpoints_dir> which create a loss plot, a log file and for every epoch will create:
+- A copy of the trained model.
+- An example of the moving, fixed and moved (deformed moving) image.
+
+Runnine the test.py code will create a directory in <results_dir> which will output the fixed images, moving images, the deformed mask and OAR images if defined, and images showing the 2D DVF outputs overlayed on the moving images. 
+
 More information on the train and test command inputs can be found using 
 
 ```
