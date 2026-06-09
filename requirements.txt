@@ -1,7 +1,6 @@
 torch
 torchvision
 scikit-image
-pickle5
 pillow
 matplotlib
 opencv-python
