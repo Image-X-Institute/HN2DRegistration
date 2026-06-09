@@ -66,9 +66,11 @@ if __name__ == '__main__':
     else:
         raise NameError('Value {} for networkType unrecognised'.format(opt.networkType))
         
-    
-    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    model.to(device)
+    if int(opt.gpu_ids) < 0:
+        device=torch.device("cpu")
+    else:
+        device = torch.device(("cuda:"+opt.gpu_ids) if torch.cuda.is_available() else "cpu")
+        model.to(device)
     
     
     
@@ -103,7 +105,7 @@ if __name__ == '__main__':
     GradLoss = losses.Grad()
     
     #if opt.SSIMParam > 0:
-    SSIMLoss = piqa.ssim.SSIM(n_channels=1).cuda()
+    SSIMLoss = piqa.ssim.SSIM(n_channels=1).to(device)
     
     AffineLoss = losses.Affine()
     
