@@ -66,7 +66,7 @@ if __name__ == '__main__':
     else:
         raise NameError('Value {} for networkType unrecognised'.format(opt.networkType))
         
-    if int(float(opt.gpu_ids)) < 0:
+    if len(opt.gpu_ids) == 0:
         device=torch.device("cpu")
     else:
         device = torch.device(("cuda:"+opt.gpu_ids) if torch.cuda.is_available() else "cpu")
