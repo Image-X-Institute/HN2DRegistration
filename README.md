@@ -17,7 +17,7 @@ Clone repository from github:
 git clone https://github.com/Image-X-Institute/HN2DRegistration
 ```
 
-Setup python environment using:
+Python version required is <=3.10. Setup python environment using:
 ```
 pip install -r requirements.txt
 ```
