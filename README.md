@@ -60,9 +60,11 @@ python test.py -h
 The training dataset was from the cancer imaging archive [HNSCC dataset](https://www.cancerimagingarchive.net/collection/hnscc/). The testing set was from a 30 patient dataset from Blacktown Hospital, Sydney Australia and 
 can be downloaded from the University of Sydney [library](https://hdl.handle.net/2123/34250). 
 
-## Citation
+[//]: #Citation
 
-If using this work please cite as **insert proper citation**.
+[//]: #
+(using this work please cite as **insert proper citation**.)
+
 
 ## Directory Structure
 
